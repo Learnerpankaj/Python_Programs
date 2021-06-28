@@ -1,0 +1,16 @@
+# find the non matched word in the string
+
+str1 = "My name is Pankaj"
+str2 = "name is Pankaj"
+l1 = str1.split()
+l2 = str2.split()
+l3 = []
+#print(l1,l2)
+str = ""
+for i in l1:
+    if i in l2:
+            continue
+    else:
+        l3.append(i)
+str = str.join(l3) # Converting a list to string
+print(str)

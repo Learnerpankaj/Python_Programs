@@ -1,0 +1,9 @@
+class calculate:
+    def factorial(self,num):
+        if num ==1:
+            return num
+        else:
+            return num*factorial(num-1)
+c = calculate()
+num = int(input("Enter the number"))
+c.factorial(num)

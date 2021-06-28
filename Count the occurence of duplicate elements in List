@@ -1,0 +1,11 @@
+#Count the occurence of duplicate elements:
+
+check_list = [1,3,2,1,3,2,4,5,6,3,5,7,1]
+value_count = {}
+for i in check_list:
+    if i in value_count:
+        value_count[i] += 1
+    else:
+        value_count[i] = 1
+for key,value in value_count.items():
+    print(key," :: ",value,'times')

@@ -1,0 +1,8 @@
+
+getpair = [2,3,4,5,6,7,8]
+for x in range(0,len(getpair)-1):
+    for y in range(x+1,len(getpair)):
+        if getpair[x] + getpair[y] == 10:
+            pair = (getpair[x],getpair[y]) 
+            print(tuple(pair))
+print("length",len(getpair))     

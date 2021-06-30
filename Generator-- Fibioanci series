@@ -1,0 +1,14 @@
+def gen_fib():
+    a =0
+    b =1
+    for i in range(10):
+        yield a
+        a,b =b,a+b
+        
+ # Print Approach 1
+for numb in gen_fib():
+    print(numb)
+ 
+#Print Approach 2 
+x = gen_fib()
+print(next(x))

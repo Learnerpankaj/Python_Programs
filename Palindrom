@@ -1,0 +1,10 @@
+def checpal(word):
+    rev = word[::-1]
+    print(word)
+    print(rev)
+    if rev == word:
+        return 1
+    else:
+        return -1
+word = 'check'
+checpal(word)

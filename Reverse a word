@@ -1,0 +1,8 @@
+def reverse_sentence(x):
+    lis = x.split()
+    print(lis)
+    reverse_word = ' '.join(reversed(lis))
+    return reverse_word
+x = input()
+#x ='Pankaj kumar Sharma'
+reverse_sentence(x)
